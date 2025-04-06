@@ -16,6 +16,9 @@
 `69d99b5` **added dev db and change seeder**
 ![image](/photo_completed_work/added%20dev%20db%20and%20change%20seeder.png)
 
+`bf95b53` **CRUD api created**
+![image](/photo_completed_work/CRUD%20api%20created.png)
+
 **Postman testing**
 POST
 ![image](/photo_completed_work/create%20user%20POST.png)
