@@ -16,7 +16,15 @@
 `69d99b5` **added dev db and change seeder**
 ![image](/photo_completed_work/added%20dev%20db%20and%20change%20seeder.png)
 
-
+**Postman testing**
+POST
+![image](/photo_completed_work/create%20user%20POST.png)
+PUT
+![image](/photo_completed_work/change%20user%20PUT.png)
+DELETE
+![image](/photo_completed_work/delete%20user%20DELETE.png)
+GET
+![image](/photo_completed_work/get%20all%20users%20GET.png)
 
 
 
