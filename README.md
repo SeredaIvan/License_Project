@@ -13,7 +13,8 @@
 ![image](/photo_completed_work/seeder%20user%20created.png)
 ![image](/photo_completed_work/seeder%20user%20created%202.png)
 
-
+`69d99b5` **added dev db and change seeder**
+![image](/photo_completed_work/added%20dev%20db%20and%20change%20seeder.png)
 
 
 
