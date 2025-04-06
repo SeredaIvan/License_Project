@@ -16,7 +16,7 @@ export default function Home() {
       console.error("Name or email is required");
       return;
     }
-    fetch(process.env.NEXT_PUBLIC_API_URL + "/v1.0/create-user", {
+    fetch(process.env.NEXT_PUBLIC_API_URL + "/v1.0/users/create-user", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -48,7 +48,7 @@ export default function Home() {
       return;
     }
   
-    const response = await fetch(process.env.NEXT_PUBLIC_API_URL + "/v1.0/delete-user", {
+    const response = await fetch(process.env.NEXT_PUBLIC_API_URL + "/v1.0/users/delete-user", {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ export default function Home() {
 
   const getAllUsers = async () => {
     console.log('Getting all users');
-    fetch(process.env.NEXT_PUBLIC_API_URL + "/v1.0/get-all-users", {
+    fetch(process.env.NEXT_PUBLIC_API_URL + "/v1.0/users/get-all-users", {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -99,7 +99,7 @@ export default function Home() {
       console.error("Name or email is required");
       return;
     }
-    fetch(process.env.NEXT_PUBLIC_API_URL + "/v1.0/change-user", {
+    fetch(process.env.NEXT_PUBLIC_API_URL + "/v1.0/users/change-user", {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
