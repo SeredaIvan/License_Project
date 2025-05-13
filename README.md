@@ -42,12 +42,10 @@ NEXT_PUBLIC_API_URL='YOUR_PRODUCTION_API_URL'
 #### Docusaurus
 
 В головній директорії проекту виконати команди 
-```
-cd my-docs 
-```
-``` 
-npm run serve 
-```
+
+```cd my-docs```
+
+```npm run start```
 
 На локальному хості з портом 3000 запуститься документація на основі **Docusaurus**  
 
