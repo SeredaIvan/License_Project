@@ -8,6 +8,7 @@
 import UsersList from "@/components/UsersList";
 import { useState } from "react";
 import { User } from "@/types/types";
+import {CookieConsent} from "react-cookie-consent";
 
 export default function Home() {
 
@@ -130,6 +131,30 @@ export default function Home() {
   }
 
   return (
+      <>
+      <CookieConsent
+          location="bottom"
+          buttonText="Прийняти"
+          declineButtonText="Відхилити"
+          enableDeclineButton
+          cookieName="gdpr-cookie"
+          style={{ background: "#2B373B" }}
+          buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+          declineButtonStyle={{ fontSize: "13px" }}
+          expires={150}
+          onAccept={() => {
+            console.log("Cookies accepted.");
+          }}
+          onDecline={() => {
+            console.log("Cookies declined.");
+          }}
+      >
+        Ми використовуємо файли cookie для покращення вашого досвіду.{" "}
+        <a href="/privacy-policy" style={{ color: "#ffffff", textDecoration: "underline" }}>
+          Докладніше
+        </a>
+      </CookieConsent>
+
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         {process.env.NEXT_PUBLIC_VARIABLE_FOR_CLIENT}
@@ -156,5 +181,6 @@ export default function Home() {
         
       </footer>
     </div>
+      </>
   );
 }
