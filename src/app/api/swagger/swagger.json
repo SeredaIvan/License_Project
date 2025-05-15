@@ -1,0 +1,62 @@
+
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "User API",
+    "version": "1.0.0",
+    "description": "Мінімальна документація для API"
+  },
+  "paths": {
+    "/api/v1.0/users/change-user": {
+      "put": {
+        "summary": "Оновити користувача",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["userId"],
+                "properties": {
+                  "userId": { "type": "string" },
+                  "name": { "type": "string" },
+                  "email": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Успішне оновлення" },
+          "400": { "description": "Некоректні дані" },
+          "404": { "description": "Користувача не знайдено" }
+        }
+      }
+    },
+    "/api/v1.0/users/get-all-users": {
+      "get": {
+        "summary": "Отримати всіх користувачів",
+        "responses": {
+          "200": {
+            "description": "Успішно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": { "type": "string" },
+                      "name": { "type": "string" },
+                      "email": { "type": "string" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,34 +1,67 @@
-**Фото виконаної роботи**
+# Next.js Lab 02
 
-`d81e3fc` **use client env variables**  
-![image](/photo_completed_work/use%20client%20env%20variables.png)
-`1181d36` **SSR env**  
-![image](/photo_completed_work/SSR%20env%20.png)
-![image](/photo_completed_work/SSR%20env%202.png)
+Лабораторна робота №2 з використанням **Next.js**. Містить базову реалізацію SPA з використанням **React**, маршрутизації, компонентів та стилів. 
 
-`cc11913` **first migration**  
-![image](/photo_completed_work/first%20migration.png)
+## Конфігурація
 
-`989256c` **seeder user created**  
-![image](/photo_completed_work/seeder%20user%20created.png)
-![image](/photo_completed_work/seeder%20user%20created%202.png)
+Перед запуском проєкту необхідно:
 
-`69d99b5` **added dev db and change seeder**
-![image](/photo_completed_work/added%20dev%20db%20and%20change%20seeder.png)
-
-`bf95b53` **CRUD api created**
-![image](/photo_completed_work/CRUD%20api%20created.png)
-
-**Postman testing**
-POST
-![image](/photo_completed_work/create%20user%20POST.png)
-PUT
-![image](/photo_completed_work/change%20user%20PUT.png)
-DELETE
-![image](/photo_completed_work/delete%20user%20DELETE.png)
-GET
-![image](/photo_completed_work/get%20all%20users%20GET.png)
+1. Мати встановлений [Node.js](https://nodejs.org/)
+2. Інсталювати залежності ```npm install```
+3. Створити `.env` файл
 
 
+### Приклад `.env`:
 
+```
+# Для розробки (розкоментуйте, щоб використовувати)
+# NODE_ENV=development
+# DATABASE_URL='YOUR_DEV_DATABASE_URL'
+# NEXT_PUBLIC_DOMAIN='YOUR_DEV_DOMAIN'
+# NEXT_PUBLIC_API_URL='YOUR_DEV_API_URL'
 
+# Для продакшну (розкоментуйте, щоб використовувати)
+NODE_ENV=production
+DATABASE_URL='YOUR_PRODUCTION_DATABASE_URL'
+NEXT_PUBLIC_DOMAIN='YOUR_PRODUCTION_DOMAIN'
+NEXT_PUBLIC_API_URL='YOUR_PRODUCTION_API_URL'
+```
+
+### Основні команди
+
+```npm run dev``` -	Запуск у режимі розробки
+
+```npm run build``` -	Збірка проєкту
+
+```npm start``` - Запуск зібраного застосунку
+
+```npm run lint``` - Перевірка коду за eslint
+
+```npx prisma db seed``` - Запускає сидінг бази даних
+
+#### Docusaurus
+
+В головній директорії проекту виконати команди 
+
+```cd my-docs```
+
+```npm run start```
+
+На локальному хості з портом 3000 запуститься документація на основі **Docusaurus**  
+
+### Swagger 
+
+Запустивши проект **Swagger** доступний за ``/swagger``
+
+## Інструкція для користувача
+
+[Інструкцію для користувача можна почитати тут...](/USER_GUIDE.md)
+
+## Ліцензія
+Цей проєкт ліцензовано згідно MPU [Mozilla Public License 2.0](./LICENSE)
+##
+Автор : **Ivan Sereda**
+
+Email: [vt_221_bio@student.ztu.edu.ua]()
+
+Рік : 2025
